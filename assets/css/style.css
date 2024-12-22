@@ -1,3 +1,114 @@
-h1 {
-    color: #a38af1;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5f8;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1,
+h1+h2 {
+    text-align: center;
+    color: #009688;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 0px;
+}
+
+h2 {
+    border-bottom: 2px solid #009688;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+h3 {
+    color: #00796b;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.content-list {
+    list-style: none;
+}
+
+.content-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+a {
+    color: #009688;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+main>.like-or-hate>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.like-or-hate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.2rem;
+    width: 20%;
+}
+
+/* 버튼 스타일 */
+
+
+/* 좋아요 버튼 호버 효과 */
+#likeBtn:hover {
+    color: #0056b3;
+    background-color: #fff;
+    border: 1px #0056b3 solid;
+    text-decoration: none;
+}
+
+/* 싫어요 버튼 호버 효과 */
+#hateBtn:hover {
+    color: #dc3545;
+    background-color: #fff;
+    border: 1px#dc3545 solid;
+    text-decoration: none;
+}
+
+/* 카운트 스타일 */
+#cnt {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+strong {
+    color: #5081b1;
 }
